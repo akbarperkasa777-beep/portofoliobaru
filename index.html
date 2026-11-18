@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Portfolio pribadi Muh. Akbar Perkasa — Siswa SMK PGRI 2 Ponorogo jurusan Rekayasa Perangkat Lunak." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Muh. Akbar Perkasa — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Beranda">AKBAR<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Ubah tema">
+          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero section" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge"><i class="bi bi-code-slash"></i> Siswa Rekayasa Perangkat Lunak</span>
+          <h1 class="hero-title">
+            Halo, Saya <span class="highlight">Muh. Akbar Perkasa</span>
+          </h1>
+          <p class="hero-desc">
+            Siswa <strong>SMK PGRI 2 Ponorogo</strong> jurusan Rekayasa Perangkat Lunak (RPL) kelas XII RPL 1.
+            Saya suka membangun website modern dan mempelajari teknologi web.
+          </p>
+          <p class="typing-line">Saya  <span class="typed" id="typed"></span><span class="caret">|</span></p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Portfolio <i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya <i class="bi bi-send"></i></a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/akbarperkasa777-beep" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" data-social="tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" data-social="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-frame">
+            <img src="images/profile.jpg" alt="Foto profil Muh. Akbar Perkasa" />
+          </div>
+          <div class="floating-chip chip-1"><i class="bi bi-braces"></i> Web Dev</div>
+          <div class="floating-chip chip-2"><i class="bi bi-database"></i> MySQL</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Tentang Saya</span>
+          <h2 class="section-title">Kenalan Lebih Dekat</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="images/about.jpg" alt="Foto Muh. Akbar Perkasa untuk bagian Tentang Saya" />
+          </div>
+
+          <div class="about-content reveal">
+            <p>
+              Halo! Saya <strong>ABU MUKHTART</strong>, siswa <strong>SMK PGRI 2 Ponorogo</strong>
+              jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong>, kelas <strong>XII RPL 1</strong>.
+              Saya mulai masuk pada tahun <strong>2024</strong> dan sedang mendalami dunia pemrograman web.
+            </p>
+            <p>
+              Saya tertarik pada pengembangan <em>frontend</em> dan <em>backend</em> sederhana, mulai dari
+              membuat tampilan website yang rapi hingga mengelola data menggunakan MySQL. Saya senang
+              belajar hal baru dan terus mengasah kemampuan melalui proyek-proyek kecil.
+            </p>
+
+            <ul class="info-list">
+              <li><i class="bi bi-person-badge"></i><div><span>Nama</span><strong>Muh. Akbar Perkasa</strong></div></li>
+              <li><i class="bi bi-mortarboard"></i><div><span>Sekolah</span><strong>SMK PGRI 2 Ponorogo</strong></div></li>
+              <li><i class="bi bi-journal-code"></i><div><span>Jurusan</span><strong>Rekayasa Perangkat Lunak</strong></div></li>
+              <li><i class="bi bi-calendar-event"></i><div><span>Kelas / Tahun Masuk</span><strong>XII RPL 1 / 2024</strong></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Kemampuan</span>
+          <h2 class="section-title">Skill &amp; Tools</h2>
+          <p class="section-sub">Kemampuan yang sedang saya pelajari dan kembangkan.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#e34f26"><i class="bi bi-filetype-html"></i></div>
+            <h3>HTML</h3>
+            <div class="bar"><span style="--w:85%"></span></div>
+            <small>Struktur &amp; semantik</small>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#264de4"><i class="bi bi-filetype-css"></i></div>
+            <h3>CSS</h3>
+            <div class="bar"><span style="--w:80%"></span></div>
+            <small>Layout &amp; styling</small>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#f7df1e"><i class="bi bi-filetype-js"></i></div>
+            <h3>JavaScript</h3>
+            <div class="bar"><span style="--w:70%"></span></div>
+            <small>Interaksi &amp; DOM</small>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#777bb4"><i class="bi bi-filetype-php"></i></div>
+            <h3>PHP</h3>
+            <div class="bar"><span style="--w:65%"></span></div>
+            <small>Dasar backend</small>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#00758f"><i class="bi bi-database"></i></div>
+            <h3>MySQL</h3>
+            <div class="bar"><span style="--w:65%"></span></div>
+            <small>Query dasar</small>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#7952b3"><i class="bi bi-bootstrap-fill"></i></div>
+            <h3>Bootstrap</h3>
+            <div class="bar"><span style="--w:75%"></span></div>
+            <small>UI cepat</small>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" style="--c:#f05032"><i class="bi bi-git"></i></div>
+            <h3>Git &amp; GitHub</h3>
+            <div class="bar"><span style="--w:70%"></span></div>
+            <small>Version control</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CURRENTLY LEARNING ===== -->
+    <section class="section section-alt" id="learning">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Pengembangan Diri</span>
+          <h2 class="section-title">Currently Learning</h2>
+          <p class="section-sub">Teknologi yang sedang saya pelajari dan kembangkan.</p>
+        </div>
+        <div class="learning-grid" id="learningGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT STATISTICS ===== -->
+    <section class="section stats-section" aria-label="Statistik portfolio">
+      <div class="container stats-grid" id="statsGrid"></div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Project Showcase</span>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-sub">Jelajahi proyek, screenshot, dan teknologi yang saya gunakan.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <section class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+        <button class="project-modal-close" id="projectModalClose" type="button" aria-label="Tutup">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="project-modal-content" id="projectModalContent"></div>
+      </section>
+    </div>
+
+    <!-- ===== MY HOBBIES ===== -->
+    <section class="section section-alt" id="hobbies">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">MY HOBBIES</span>
+          <h2 class="section-title">Things I Love to Do</h2>
+          <p class="section-sub">Programming isn't just a skill for me, it's something I enjoy exploring, learning, and creating every day.</p>
+        </div>
+        <div class="hobbies-grid" id="hobbiesGrid"></div>
+        <div class="hobbies-footer reveal">
+          <p class="hobbies-quote">“Every line of code is an opportunity to create something meaningful.”</p>
+          <div class="hobby-tech-stack" aria-label="Teknologi favorit">
+            <span><i class="bi bi-filetype-html" aria-hidden="true"></i> HTML</span>
+            <span><i class="bi bi-filetype-css" aria-hidden="true"></i> CSS</span>
+            <span><i class="bi bi-filetype-js" aria-hidden="true"></i> JavaScript</span>
+            <span><i class="bi bi-filetype-php" aria-hidden="true"></i> PHP</span>
+            <span><i class="bi bi-github" aria-hidden="true"></i> GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FUN FACTS ===== -->
+    <section class="section" id="funFacts">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Sedikit Tentang Saya</span>
+          <h2 class="section-title">Fun Facts</h2>
+        </div>
+        <div class="facts-grid">
+          <article class="fact-card reveal"><i class="bi bi-window-stack"></i><p>Saya menikmati proses membangun tampilan website yang rapi dan mudah digunakan.</p></article>
+          <article class="fact-card reveal"><i class="bi bi-database-check"></i><p>Saya tertarik menghubungkan antarmuka dengan data dan fitur aplikasi.</p></article>
+          <article class="fact-card reveal"><i class="bi bi-lightbulb"></i><p>Saya suka belajar teknologi baru lewat proyek dan eksperimen kecil.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LET'S WORK TOGETHER ===== -->
+    <section class="section lets-talk-section" id="letsTalk">
+      <div class="container">
+        <div class="lets-talk-card reveal">
+          <span class="lets-talk-icon" aria-hidden="true"><i class="bi bi-chat-dots"></i></span>
+          <span class="section-tag">Mari Berkolaborasi</span>
+          <h2>Have an Idea? <span>Let's Talk!</span></h2>
+          <p>Punya ide menarik, pertanyaan, atau ingin bekerja sama? Jangan ragu untuk menghubungi saya. Saya terbuka untuk berdiskusi dan mengembangkan ide bersama.</p>
+          <a class="btn btn-primary" href="#messageForm">Kirim Pesan <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Kontak</span>
+          <h2 class="section-title">Mari Terhubung</h2>
+          <p class="section-sub">Silakan hubungi saya melalui kanal berikut.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- WhatsApp -->
+          <article class="contact-card reveal">
+            <div class="contact-icon wa"><i class="bi bi-whatsapp"></i></div>
+            <h3>WhatsApp</h3>
+            <p class="contact-user" data-contact="wa-number">+62 895-1910-4607</p>
+            <a href="#" data-social="whatsapp" target="_blank" rel="noopener noreferrer" class="btn btn-contact wa">
+              <i class="bi bi-whatsapp"></i> Hubungi Saya
+            </a>
+          </article>
+
+          <!-- Instagram -->
+          <article class="contact-card reveal">
+            <div class="contact-icon ig"><i class="bi bi-instagram"></i></div>
+            <h3>Instagram</h3>
+            <p class="contact-user" data-contact="ig-user">@kasaaa_777</p>
+            <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer" class="btn btn-contact ig">
+              <i class="bi bi-instagram"></i> Kunjungi Profil
+            </a>
+          </article>
+
+          <!-- TikTok -->
+          <article class="contact-card reveal">
+            <div class="contact-icon tt"><i class="bi bi-tiktok"></i></div>
+            <h3>TikTok</h3>
+            <p class="contact-user" data-contact="tt-user">@blk.phantom</p>
+            <a href="#" data-social="tiktok" target="_blank" rel="noopener noreferrer" class="btn btn-contact tt">
+              <i class="bi bi-tiktok"></i> Kunjungi Profil
+            </a>
+          </article>
+        </div>
+
+        <form class="message-form reveal" id="messageForm" novalidate>
+          <div class="message-form-heading">
+            <span class="section-tag">Kirim Pesan</span>
+            <h3>Ceritakan ide Anda</h3>
+            <p>Pesan akan disiapkan di WhatsApp. Anda tetap perlu menekan tombol kirim di WhatsApp.</p>
+          </div>
+          <div class="message-fields">
+            <div class="form-field">
+              <label for="messageName">Nama lengkap <span aria-hidden="true">*</span></label>
+              <input id="messageName" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="Nama Anda">
+            </div>
+            <div class="form-field">
+              <label for="messagePhone">Nomor WhatsApp <small>(opsional)</small></label>
+              <input id="messagePhone" name="phone" type="tel" autocomplete="tel" maxlength="24" placeholder="Contoh: 081234567890">
+              <small class="field-error" id="phoneError"></small>
+            </div>
+            <div class="form-field">
+              <label for="messageSubject">Subjek pesan <span aria-hidden="true">*</span></label>
+              <input id="messageSubject" name="subject" type="text" maxlength="100" required placeholder="Topik pesan Anda">
+            </div>
+            <div class="form-field">
+              <label for="messageCategory">Kategori pesan <span aria-hidden="true">*</span></label>
+              <select id="messageCategory" name="category" required>
+                <option value="">Pilih kategori</option>
+                <option>Ide atau Saran</option>
+                <option>Pertanyaan</option>
+                <option>Kerja Sama</option>
+                <option>Penawaran Proyek</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="messageBody">Isi pesan <span aria-hidden="true">*</span></label>
+              <textarea id="messageBody" name="message" rows="5" minlength="10" maxlength="2000" required placeholder="Tulis pesan Anda (minimal 10 karakter)"></textarea>
+            </div>
+          </div>
+          <div class="message-form-footer">
+            <p class="form-status" id="formStatus" role="status" aria-live="polite">Kolom bertanda * wajib diisi.</p>
+            <a class="form-fallback-link" id="whatsappFallback" href="#" target="_blank" rel="noopener noreferrer" hidden>Buka WhatsApp secara manual</a>
+            <button class="btn btn-primary message-submit" type="submit">
+              <span class="button-label"><i class="bi bi-send"></i> Kirim Pesan</span>
+              <span class="button-loading" aria-hidden="true"><i class="bi bi-arrow-repeat"></i> Membuka WhatsApp...</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">AKBAR<span>.</span></a>
+        <p>&copy; <span id="year"></span> Muh. Akbar Perkasa. All rights reserved.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/akbarperkasa777-beep" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" data-social="tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" data-social="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" data-social="whatsapp" target="_blank" rel="noopener noreferrer"
+     class="floating-wa" id="floatingWA" aria-label="Chat WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="pulse"></span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
